@@ -22,9 +22,15 @@ graph TD;
 ```
 
 ## Data Flow
-1. Ingestion: Fetch data via the Bing API using relevant search query parameters.
-2. Processing:
- * Synapse ML transforms and enriches data.
- * The AnalyzedText model processes the textual data.
-Storage: Data is stored in JSON format and Lakehouse DB for efficient access.
-Visualization: Power BI connects to the data sources to create rich, interactive dashboards.
+1. Data Ingestion: Fetch data via the Bing API using relevant search query parameters.
+2. Data Processing & Machine Learning:
+   - Synapse Data Science ML: the AnalyzedText model processes the textual data.
+   - Snapse Data Engineering: transforms and enriches data.
+3. Data Storage: Data is stored in JSON format and Lakehouse DB for efficient access.
+4. Visualization: Power BI connects to the data sources to create rich, interactive dashboards.
+
+## Prerequisites
+1. Azure Subscription with access to:
+   - Bing API credentials.
+   - Azure services like Data Factory, Synapse Data Science, Synapse Data Engineering, Lakehouse DB, and Power BI.
+Bing API Key for fetching news data (https://learn.microsoft.com/en-us/bing/search-apis/bing-news-search/reference/query-parameters)
