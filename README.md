@@ -15,8 +15,9 @@ graph TD;
     B --> C[JSON Storage];
     C --> D[Synapse Data Science];
     C --> E[Synapse Data Engineering];
-    D --> F[Power BI];
-    E --> F;
+    D --> G[Lakehouse DB];
+    E --> G;
+    G --> F[Power BI];
 ```
 
 ## Data Flow
@@ -28,7 +29,7 @@ graph TD;
  -  Visualization: Power BI connects to the data sources to create rich, interactive dashboards.
 
 ## Prerequisites
-1. Azure Subscription with access to:
-   - Bing API credentials.
-   - Azure services like Data Factory, Synapse Data Science, Synapse Data Engineering, Lakehouse DB, and Power BI.
+ - Azure Subscription with access to:
+    - Bing API credentials.
+    - Azure services like Data Factory, Synapse Data Science, Synapse Data Engineering, Lakehouse DB, and Power BI.
 Bing API Key for fetching news data (https://learn.microsoft.com/en-us/bing/search-apis/bing-news-search/reference/query-parameters)
